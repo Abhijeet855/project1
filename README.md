@@ -1,11 +1,2 @@
-version: '2'
-services:
-  compose-test:
-    image: centos
-    links:
-      - compose-db
-    command: /usr/bin/curl compose-db:6379
-  compose-db:
-    image: redis
-    expose:
-      - "6379"
+sudo docker run -d -p 5000:5000 \
+--restart=always --name registry registry:2
