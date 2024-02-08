@@ -1,3 +1,11 @@
-# project1
-this is the sample repo
-we have edited the READMe file
+version: '2'
+services:
+  compose-test:
+    image: centos
+    links:
+      - compose-db
+    command: /usr/bin/curl compose-db:6379
+  compose-db:
+    image: redis
+    expose:
+      - "6379"
