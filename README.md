@@ -1,3 +1,3 @@
-curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
-sudo echo deb http://apt.kubernetes.io/ kubernetes-xenial main > /etc/apt/sources.list.d/kubernetes.list
+sudo apt install docker.io kubectl=1.20.5-00 kubeadm=1.20.5-00 kubelet=1.20.5-00
+
 
