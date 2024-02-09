@@ -1,2 +1,3 @@
-sudo docker run -d -p 5000:5000 \
---restart=always --name registry registry:2
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+sudo echo deb http://apt.kubernetes.io/ kubernetes-xenial main > /etc/apt/sources.list.d/kubernetes.list
+
